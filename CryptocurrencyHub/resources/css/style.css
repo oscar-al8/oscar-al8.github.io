@@ -46,7 +46,9 @@ h2:after {
 	margin-top: 20px;
 }
 
+.what_is h2:after,
 .history h2:after,
+.mining h2:after,
 .types h2:after {
 	background-color: #fff;
 }
@@ -193,39 +195,40 @@ nav ul li a:active {
 	display: none;
 }
 
+.what_is,
+.history,
+.mining,
+.types {
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	color: #fff;
+}
+
 
 /* WHAT IS? */
 
 .what_is {
-	color: #111;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background4.jpg);
 }
 
 /* HISTORY */
 
 .history {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background2.jpg);
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 100%;
-	color: #fff;
 }
 
 /* MINING */
 
 .mining {
-	color: #111;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background5.jpg);
 }
 
 /* TYPES */
 
 .types {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background3.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	height: 100%;
-	color: #fff;
 }
 
 /* SOCIAL BUTTONS */
