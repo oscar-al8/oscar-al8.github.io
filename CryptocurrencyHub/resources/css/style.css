@@ -480,10 +480,9 @@ footer p {
 		margin-bottom: 5%;
 	}
 
-	.history {
-		height: 100%;
-	}
-
+	.what_is,
+	.history,
+	.mining,
 	.types {
 		height: 100%;
 	}
