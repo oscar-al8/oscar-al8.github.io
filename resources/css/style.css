@@ -293,6 +293,28 @@ nav ul li a:active {
 	top: 11%;
 }
 
+/* BANNER */
+
+.banner2 {
+	position: fixed;
+	right: 0.5%;
+	top: 20%;
+}
+
+.banner2 img {
+	width: 9vw;
+	height: 55vh;
+}
+
+.banner {
+	text-align: center;
+}
+
+.banner img {
+	width: 50vw;
+	height: 18vh;
+}
+
 /* FOOTER */
 
 footer {
@@ -392,21 +414,18 @@ footer p {
 		margin-top: -13%;
 	}
 
-	.s_l_container {
+	.s_l_container,
+	nav ul,
+	nav img,
+	h1,
+	.banner,
+	.banner2 {
 		display: none;
 	}
 
 	nav {
 		width: 415px;
 		height: 80px;
-	}
-
-	nav ul {
-		display: none;
-	}
-
-	nav img {
-		display: none;
 	}
 
 	.b_u_container {
@@ -419,10 +438,6 @@ footer p {
 		font-size: 180%;
 		top: 15%;
 		left: 24%;
-	}
-
-	h1 {
-		display: none;
 	}
 
 	.logo {
