@@ -70,7 +70,7 @@ h3 {
 }
 
 .row {
-	max-width: 1370px;
+	max-width: 100vw;
 }
 
 .row:before,
@@ -106,8 +106,8 @@ h3 {
 }
 
 .item-1-of-2 img {
-	width: 510px;
-	height: 260px;
+	width: 78vh;
+	height: 38vh;
 }
 
 .item-1-of-3 {
@@ -117,8 +117,8 @@ h3 {
 }
 
 .item-1-of-3 img {
-	width: 360px;
-	height: 200px;
+	width: 26vw;
+	height: 28vh;
 }
 
 .pdl {
@@ -154,7 +154,7 @@ nav {
 	font-size: 90%;
 	height: 90px;
 	position: fixed;
-	width: 1370px;
+	width: 100vw;
 }
 
 nav img {
