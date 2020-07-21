@@ -18,6 +18,27 @@ html {
 	scroll-behavior: smooth;
 }
 
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.row {
+	max-width: 100vw;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+
+.row:after {
+    clear:both;
+}
+
+
 h1,
 h2 {
 	font-weight: 300;
@@ -45,27 +66,6 @@ h2 {
 	padding-top: 2%;
 	padding-left: 5%;
 	margin: 2% 0;
-}
-
-
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-.row {
-	max-width: 100vw;
-}
-
-.row:before,
-.row:after {
-    content:"";
-    display:table;
-}
-
-.row:after {
-    clear:both;
 }
 
 /* HEADER */
@@ -105,6 +105,7 @@ nav {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
+	margin-right: 1%;
 }
 
 .item_nav {
@@ -169,7 +170,7 @@ nav {
 }
 
 .item_shoes img {
-	width: 20vw;
+	width: 21vw;
 	height: 40vh;
 }
 
@@ -196,7 +197,7 @@ nav {
 }
 
 .item_accessories img {
-	width: 20vw;
+	width: 21vw;
 	height: 40vh;
 }
 
@@ -204,4 +205,33 @@ nav {
 	font-size: 90%;
 	text-align: left;
 	margin: 5% 0;
+}
+
+/* GALLERY */
+
+.gallery {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background5.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.flex_gallery {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 7%; 
+}
+
+.opct img {
+	opacity: 0.7;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.opct img:hover{
+	transform: scale(1.15);
+	opacity: 1;
+}
+
+.ovfh {
+	overflow: hidden;
 }
