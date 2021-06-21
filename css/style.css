@@ -5,3 +5,19 @@
     scroll-behavior: smooth;
 }
 
+#about-me{
+    margin-top: 70px;
+}
+
+.pfp{
+    width: 250px;
+    height: auto;
+}
+
+@media only screen and (max-device-width: 768px){
+
+    .info-flex{
+        flex-flow: column;
+    }
+
+}
