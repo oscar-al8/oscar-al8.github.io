@@ -9,8 +9,12 @@
     margin-top: 70px;
 }
 
+#bs-color{
+    color: #6f42c1;
+}
+
 .pfp{
-    width: 250px;
+    width: 50%;
     height: auto;
 }
 

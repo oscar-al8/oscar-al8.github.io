@@ -31,25 +31,95 @@
         </nav>
         <section class='container-fluid' id='about-me'>
             <div class="row">
+                <h1 class="display-5 text-center my-5">About me</h1>
+            </div>
+            <div class="row">
                 <div class="col-sm-6 mx-auto">
                     <div class="card text-white bg-dark">
                         <div class="card-header">
                           This page is design with
-                          <span role='button' class="badge text-dark" style='background: #E67009'>HTML</span>
+                          <span role='button' class="badge text-dark" style='background: #E67009'>HTML5</span>
                           <span role='button' class="badge bg-primary text-dark">CSS3</span>
                           <span role='button' class="badge bg-warning text-dark">JS</span>
                           and the help of
-                          <i role='button' class="bi bi-bootstrap-fill"></i>
+                          <a href="https://getbootstrap.com/" target="blank" id='bs-color'><i role='button' class="bi bi-bootstrap-fill"></i></a>
                         </div>
-                        <div class="card-body d-flex align-items-center info-flex">
-                            <div class="pfp">
+                        <div class="card-body d-flex align-items-center p-0 info-flex">
+                            <div class="pfp p-3">
                                 <img src="./img/pfp.jpg" class="img-thumbnail bg-dark w-100 h-auto p-0" alt="Profile Picture">
                             </div>
-                            <div class="d-flex flex-column justify-content-center p-3">
+                            <div class="d-flex flex-column justify-content-center p-2">
                                 <h5 class="card-title">Hi! My name is Oscar and I'm 20 years old.</h5>
                                 <p class="card-text">I'm a senior student of Informatics Engineering at University Dr. Rafael Belloso Chacin.</p>
                                 <p>I especialize in the design of JavaScript code and solving errors for the correct functioning of the programs.</p>
-                                <p>I'm also excited to learn more everyday.</p>
+                                <p>I'm also excited to learn more everyday! That's why I keep searching courses and practicing my programming skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id='education'>
+            <div class="row">
+                <h1 class="display-5 my-5">Education</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="accordion" id="accordionE">
+                        <div class="accordion-item border-dark">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                High School
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionE">
+                                <div class="accordion-body">
+                                    <strong>U.E.P. 'Virgen del Rosario'</strong> (2012 - 2017)
+                                    <p class="m-0">General Middle Education in Sciences</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-dark">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                University
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionE">
+                                <div class="accordion-body">
+                                    <strong>Dr. Rafael Belloso Chacín</strong> (2017 - 2021)
+                                    <p class="m-0">Informatics Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-dark">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Courses
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionE">
+                                <div class="accordion-body">
+                                    <strong>Build Responsive Real World Websites with HTML5 and CSS3</strong> (2019)
+                                    <p>By Jonas Schmedtmann</p>
+                                    <strong>The Complete JavaScript Course 2021: From Zero to Expert!</strong> (2019)
+                                    <p>By Jonas Schmedtmann</p>
+                                    <strong>Node.js, Express, MongoDB & More: The Complete Bootcamp</strong> (2020)
+                                    <p class="m-0">By Jonas Schmedtmann</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-dark">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Experience
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionE">
+                                <div class="accordion-body">
+                                    <strong>Intership at Inverdata Software & Technology </strong> (2021)
+                                    <p class="m-0">Project Management and Front-end Design with React.js</p>
+                                </div>
                             </div>
                         </div>
                     </div>
