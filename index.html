@@ -5,9 +5,9 @@
     <link href='./css/style.css' rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-        <title>Portfolio</title>
+        <title>Oscar Alvarado | Portfolio</title>
     </head>
-    <body>
+    <body class="container-md">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand">Oscar Alvarado</a>
@@ -17,13 +17,13 @@
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
+                        <a class="nav-link" href="#about-me">About me</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Where to find me</a>
+                        <a class="nav-link" href="#find-me">Find me</a>
                         </li>
                     </ul>
                 </div>
@@ -34,23 +34,23 @@
                 <h1 class="display-5 text-center my-5">About me</h1>
             </div>
             <div class="row">
-                <div class="col-sm-6 mx-auto">
+                <div class="col-sm-8 mx-auto">
                     <div class="card text-white bg-dark">
                         <div class="card-header">
-                          This page is design with
+                          This webpage is design with
                           <span role='button' class="badge text-dark" style='background: #E67009'>HTML5</span>
                           <span role='button' class="badge bg-primary text-dark">CSS3</span>
                           <span role='button' class="badge bg-warning text-dark">JS</span>
                           and the help of
-                          <a href="https://getbootstrap.com/" target="blank" id='bs-color'><i role='button' class="bi bi-bootstrap-fill"></i></a>
+                          <a href="https://getbootstrap.com/" target="_blank" id='bs-color'><i role='button' class="bi bi-bootstrap-fill"></i></a>
                         </div>
                         <div class="card-body d-flex align-items-center p-0 info-flex">
                             <div class="pfp p-3">
                                 <img src="./img/pfp.jpg" class="img-thumbnail bg-dark w-100 h-auto p-0" alt="Profile Picture">
                             </div>
                             <div class="d-flex flex-column justify-content-center p-2">
-                                <h5 class="card-title">Hi! My name is Oscar and I'm 20 years old.</h5>
-                                <p class="card-text">I'm a senior student of Informatics Engineering at University Dr. Rafael Belloso Chacin.</p>
+                                <h5 class="card-title">Hi! My name is Oscar and this is my portfolio.</h5>
+                                <p class="card-text">I'm a senior student of Informatics Engineering at University Dr. Rafael Belloso Chacin.
                                 <p>I especialize in the design of JavaScript code and solving errors for the correct functioning of the programs.</p>
                                 <p>I'm also excited to learn more everyday! That's why I keep searching courses and practicing my programming skills.</p>
                             </div>
@@ -126,6 +126,32 @@
                 </div>
             </div>
         </section>
+        <section class="container-fluid" id='find-me'> 
+            <div class="row">
+                <h1 class="display-5 my-5 text-end">Find me in</h1>
+            </div>
+            <div class="row d-flex justify-content-end">
+                <div class="col-sm-6 d-flex justify-content-end">
+                    <a href='https://www.linkedin.com/in/oscar-alvarado-758a33211/' class="fs-1 mx-3" target='_blank'><i class="bi bi-linkedin" role='button'></i></a>
+                    <a href='https://t.me/Blaxterbos' class="fs-1 mx-3" target='_blank'><i class="bi bi-telegram" role='button'></i></a>
+                    <a href='https://github.com/oscar-al8' class="fs-1 mx-3" target='_blank'><i class="bi bi-github" role='button'></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <h1 class="display-5 my-5 text-end">or</h1>
+            </div>
+            <div class="row d-flex justify-content-end">
+                <div class="col-sm-6 d-flex flex-column align-items-end justify-content-center">
+                    <p><a id='copy-hotmail' class="fs-5">oscarmehrer@hotmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy" id='copy-hotmail-click'></i></p>
+                    <p><a id='copy-gmail' class="fs-5">blaxterbos@gmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy" id='copy-gmail-click'></i></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <h1 class="display-5 text-center my-5">Thank you for your time!</h1>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <script src='./scripts/index.js'></script>
     </body>
