@@ -21,5 +21,16 @@ function copy(email) {
   createInput.select();
   document.execCommand("copy");
   createInput.remove();
+  var div = document.getElementById('alertCopy');
+  var newFirstElement = `
+      <div class="alert alert-success alert-dismissible fade show" role="alert" id='copy-alert'>
+          <strong>Email copied!</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  `;
+  div.innerHTML = newFirstElement;
+  setTimeout(function(){
+    div.innerHTML = '';
+  }, 5000);
 }
   

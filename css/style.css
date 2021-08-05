@@ -5,6 +5,26 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,
+#copy-hotmail-click,
+#copy-gmail-click{
+    color: #FFF;
+}
+
+#copy-alert{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
 #about-me{
     margin-top: 70px;
 }
@@ -23,10 +43,14 @@
     height: auto;
 }
 
-@media only screen and (max-device-width: 768px){
+@media (min-width: 100px) and (max-width:800px) {
 
     .info-flex{
         flex-flow: column;
+    }
+
+    .pfp{
+        width: 100%;
     }
 
 }
