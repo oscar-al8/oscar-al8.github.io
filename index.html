@@ -18,13 +18,13 @@
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About me</a>
+                            <a class="nav-link" href="#about-me">About me</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
+                            <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#find-me">Find me</a>
+                            <a class="nav-link" href="#find-me">Find me</a>
                         </li>
                     </ul>
                 </div>
@@ -51,9 +51,9 @@
                             </div>
                             <div class="d-flex flex-column justify-content-center p-2">
                                 <h5 class="card-title">Hi! My name is Oscar and this is my portfolio.</h5>
-                                <p class="card-text">I'm a Informatics Engineer graduated from Dr. Rafael Belloso Chacin University.</p>
+                                <p class="card-text">I'm a Web Developer and an Informatics Engineer graduated from Dr. Rafael Belloso Chacin University.</p>
                                 <p>I especialize in the design of JavaScript code and solving errors for the correct functioning of the programs.</p>
-                                <p>I'm also excited to learn more everyday! That's why I keep searching courses and practicing my programming skills.</p>
+                                <p>I have experience working with React.js, TypeScript, Node.js and more!<br>Download my resume <a href='resume.pdf' target="_blank">here!</a> </p>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionE">
                                 <div class="accordion-body">
-                                    <strong>U.E.P. 'Virgen del Rosario'</strong> (2012 - 2017)
+                                    <strong>Virgen del Rosario</strong> (2012 - 2017)
                                     <p class="m-0">General Middle Education in Sciences</p>
                                 </div>
                             </div>
@@ -101,9 +101,9 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionE">
                                 <div class="accordion-body">
-                                    <strong>Build Responsive Real World Websites with HTML5 and CSS3</strong> (2019)
+                                    <strong>Build Responsive Real-World Websites with HTML5 and CSS3</strong> (2019)
                                     <p>By Jonas Schmedtmann</p>
-                                    <strong>The Complete JavaScript Course 2021: From Zero to Expert!</strong> (2019)
+                                    <strong>The Complete JavaScript Course 2019: From Zero to Expert!</strong> (2019)
                                     <p>By Jonas Schmedtmann</p>
                                     <strong>Node.js, Express, MongoDB & More: The Complete Bootcamp</strong> (2020)
                                     <p>By Jonas Schmedtmann</p>
@@ -129,6 +129,48 @@
                 </div>
             </div>
         </section>
+        <section class='container-fluid' id='about-me'>
+            <div class="row">
+                <h1 class="display-5 text-center my-5">Personal Projects</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mx-auto">
+                    <div class="card border-dark">
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner border border-dark">
+                            <div class="carousel-item active">
+                                <img src="./img/carzone-project.png" class="d-block w-100" alt="home-page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carzone-project-2.png" class="d-block w-100" alt="cars-page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carzone-project-3.png" class="d-block w-100" alt="services-page">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Carzone Project</h5>
+                            <p class="card-text">A personal project with a bootstrap template for a car concessionaire using Django and PostgreSQL deployed on Heroku.</p>
+                            <a href="https://vast-badlands-80587.herokuapp.com/" target='_blank' class="btn btn-primary">Visit the complete website!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="container-fluid" id='find-me'> 
             <div class="row">
                 <h1 class="display-5 my-5 text-end">Find me in</h1>
@@ -141,12 +183,12 @@
                 </div>
             </div>
             <div class="row">
-                <h1 class="display-5 my-5 text-end">or</h1>
+                <h1 class="display-5 my-3 text-end">or</h1>
             </div>
             <div class="row d-flex justify-content-end">
                 <div class="col-sm-6 d-flex flex-column align-items-end justify-content-center">
-                    <p><a id='copy-hotmail' class="fs-5">oscarmehrer@hotmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy" id='copy-hotmail-click'></i></p>
-                    <p><a id='copy-gmail' class="fs-5">blaxterbos@gmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy" id='copy-gmail-click'></i></p>
+                    <p id='copy-hotmail-click'><a id='copy-hotmail' href='javascript:void(0)'>oscarmehrer@hotmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy"></i></p>
+                    <p id='copy-gmail-click'><a id='copy-gmail' href='javascript:void(0)'>blaxterbos@gmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy"></i></p>
                 </div>
             </div>
         </section>

@@ -31,6 +31,6 @@ function copy(email) {
   div.innerHTML = newFirstElement;
   setTimeout(function(){
     div.innerHTML = '';
-  }, 5000);
+  }, 3500);
 }
   
