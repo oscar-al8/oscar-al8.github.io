@@ -52,6 +52,7 @@
 
     @media only screen and (max-width: $bp-large) {
       grid-area: cour-start / 2 / cour-end / 8;
+      justify-self: center;
     }
 
     @media only screen and (max-width: $bp-medium) {

@@ -271,6 +271,8 @@ $shadows-big: multiple-box-shadow(100);
 
   @media only screen and (max-width: $bp-large) {
     grid-area: courses-start / 2 / courses-end / 8;
+    display: flex;
+    justify-content: center;
   }
 
   @media only screen and (max-width: $bp-medium) {
