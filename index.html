@@ -1,243 +1,130 @@
 <html>
     <!DOCTYPE html>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href='./css/style.css' rel="stylesheet"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/favico.png">
+    <link href='./css/style.css' rel="stylesheet"> 
     <head>
         <title>Oscar Alvarado | Portfolio</title>
     </head>
-    <body class="container-md">
-        <div id='alertCopy'></div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand">Oscar Alvarado</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-me">About me</a>
+    <body>
+        <div class="container">
+            <div class="stars"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+            <div class="alert" id='alert'>
+                <p class="alert__text">Email copied!</p>
+            </div>
+            <h1 class="heading heading--1 heading__about">About me</h1>
+            <div class="intro">
+                <figure class="intro__figure">
+                    <img src="./img/pfp.jpg" alt="Profile Picture" class="intro__img">
+                </figure>
+                <div class="intro__content">
+                    <h2 class='heading--2 mb-md'>Hi! My name is Oscar and this is my portfolio.</h2>
+                    <p class='intro__text'>I'm a Web Developer and an Informatics Engineer graduated from Dr. Rafael Belloso Chacin University.</p>
+                    <p class='intro__text'>I especialize in the design of JavaScript code and the development of webpages and web applications.</p>
+                    <p class='intro__text'>I have experience working with React.js, TypeScript, Node.js and more!</p> 
+                    <p class='intro__text'>Download my resume <a href='resume.pdf' target="_blank" class='intro__link'>here!</a></p>
+                </div>
+            </div>
+            <h1 class="heading heading--1 heading__expertise">Top Expertise</h1>
+            <div class="langs">
+                <ul class="lang center">
+                    <li class="lang__item">JavaScript</li>
+                    <li class="lang__item">TypeScript</li>
+                    <li class="lang__item">React.js and Redux</li>
+                    <li class="lang__item">Node.js</li>
+                    <li class="lang__item">MongoDB</li>
+                    <li class="lang__item">CSS and Sass</li>
+                </ul>
+            </div>
+            <h1 class="heading heading--1 heading__courses">Courses</h1>
+            <div class="courses">
+                <ul class="course">
+                    <li class="course__item">
+                        <strong>Build Responsive Real-World Websites with HTML5 and CSS3</strong> (2019)
+                        <p>By Jonas Schmedtmann</p>
+                    </li>
+                    <li class="course__item">
+                        <strong>The Complete JavaScript Course 2019: From Zero to Expert!</strong> (2019)
+                        <p>By Jonas Schmedtmann</p>
+                    </li>
+                    <li class="course__item">
+                        <strong>Node.js, Express, MongoDB & More: The Complete Bootcamp</strong> (2020)
+                        <p>By Jonas Schmedtmann</p>
+                    </li>
+                    <li class="course__item">
+                        <strong>Build Python Django Real Project: Django Web Development</strong> (2021)
+                        <p>By Rathan Kumar</p>
+                    </li>
+                    <li class="course__item">
+                        <strong>MERN Stack Front To Back: Full Stack React, Redux & Node.js</strong> (2021)
+                        <p class="m-0">By Brad Traversy</p>
+                    </li>
+                    <li class="course__item">
+                        <strong>Advanced CSS and Sass Flexbox, Grid, Animations and More!</strong> (2021)
+                        <p>By Jonas Schmedtmann</p>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="heading heading--1 heading__personal">Personal Projects</h1>
+            <div class="projects">
+                    <div class="project">
+                        <figure class="project__figure">
+                            <img src="img/carzone-project.png" alt="Carzone Project" class="project__img">
+                        </figure>
+                        <h3 class="heading--3 project__title project--1">Carzone Project</h3>
+                        <div class="project__content">
+                            <p>A personal project with a bootstrap template for a car concessionaire using Django and PostgreSQL deployed on Heroku. <a href="https://vast-badlands-80587.herokuapp.com/" target="_blank" class="project__button">Visit page &rarr;</a></p>
+                        </div>
+                    </div>
+                <div class="project">
+                    <figure class="project__figure">
+                        <img src="img/devconnector-project.png" alt="Devconnector Project" class="project__img">
+                    </figure>
+                    <h3 class="heading--3 project__title project--2">Devconnector Project</h3>
+                    <div class="project__content">
+                        <p>Personal project made with MERN Stack and Redux for developers deployed on Heroku. <a href="https://mighty-ocean-00211.herokuapp.com/" target="_blank" class="project__button">Visit page &rarr;</a></p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="heading heading--1 heading__find">Find me</h1>
+            <div class="find-me">
+                <div class="email">
+                    <ul class="email__list">
+                        <li class="email__item" id='hotmail'>oscarmehrer@hotmail.com</li>
+                        <li class="email__item" id='gmail'>blaxterbos@gmail.com</li>
+                    </ul>
+                </div>
+                <p class="find-me__text">or</p>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href='https://www.linkedin.com/in/oscar-alvarado-758a33211/' target="_blank"> 
+                                <svg class='social__item social__item--li'> 
+                                    <use xlink:href='img/sprite.svg#icon-linkedin'></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
+                        <li class="social__item">
+                            <a href='https://github.com/oscar-al8' target="_blank">
+                                <svg class='social__item social__item--git'> 
+                                    <use xlink:href='img/sprite.svg#icon-github'></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#personal-projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#find-me">Find me</a>
+                        <li class="social__item">
+                            <a href="https://t.me/Blaxterbos" target="_blank">
+                                <svg class='social__item social__item--tg'> 
+                                    <use xlink:href='img/sprite.svg#icon-telegram'></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <section class='container-fluid' id='about-me'>
-            <div class="row">
-                <h1 class="display-5 text-center my-5">About me</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-8 mx-auto">
-                    <div class="card text-white bg-dark bg-gradient">
-                        <div class="card-header">
-                          This webpage is design with
-                          <span role='button' class="badge text-dark" style='background: #E67009'>HTML5</span>
-                          <span role='button' class="badge bg-primary text-dark">CSS3</span>
-                          <span role='button' class="badge bg-warning text-dark">JS</span>
-                          and the help of
-                          <a href="https://getbootstrap.com/" target="_blank" id='bs-color'><i role='button' class="bi bi-bootstrap-fill"></i></a>
-                        </div>
-                        <div class="card-body d-flex align-items-center p-0 info-flex">
-                            <div class="pfp p-3">
-                                <img src="./img/pfp.jpg" class="img-thumbnail bg-dark w-100 h-auto p-0" alt="Profile Picture">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center p-2">
-                                <h5 class="card-title">Hi! My name is Oscar and this is my portfolio.</h5>
-                                <p class="card-text">I'm a Web Developer and an Informatics Engineer graduated from Dr. Rafael Belloso Chacin University.</p>
-                                <p>I especialize in the design of JavaScript code and solving errors for the correct functioning of the programs.</p>
-                                <p>I have experience working with React.js, TypeScript, Node.js and more!<br>Download my resume <a href='resume.pdf' target="_blank">here!</a> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container-fluid" id='education'>
-            <div class="row">
-                <h1 class="display-5 my-5">Education</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="accordion" id="accordionE">
-                        <div class="accordion-item border-dark">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                High School
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionE">
-                                <div class="accordion-body">
-                                    <strong>Virgen del Rosario</strong> (2012 - 2017)
-                                    <p class="m-0">General Middle Education in Sciences</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-dark">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                University
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionE">
-                                <div class="accordion-body">
-                                    <strong>Dr. Rafael Belloso Chacín</strong> (2017 - 2021)
-                                    <p class="m-0">Informatics Engineering</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-dark">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                Courses
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionE">
-                                <div class="accordion-body">
-                                    <strong>Build Responsive Real-World Websites with HTML5 and CSS3</strong> (2019)
-                                    <p>By Jonas Schmedtmann</p>
-                                    <strong>The Complete JavaScript Course 2019: From Zero to Expert!</strong> (2019)
-                                    <p>By Jonas Schmedtmann</p>
-                                    <strong>Node.js, Express, MongoDB & More: The Complete Bootcamp</strong> (2020)
-                                    <p>By Jonas Schmedtmann</p>
-                                    <strong>Build Python Django Real Project: Django Web Development</strong> (2021)
-                                    <p>By Rathan Kumar</p>
-                                    <strong>MERN Stack Front To Back: Full Stack React, Redux & Node.js</strong> (2021)
-                                    <p class="m-0">By Brad Traversy</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-dark">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                Experience
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionE">
-                                <div class="accordion-body">
-                                    <strong>Intership at Inverdata Software & Technology </strong> (2021)
-                                    <p class="m-0">Front-end Design with React.js, TypeScript and AntDesign</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class='container-fluid' id='personal-projects'>
-            <div class="row">
-                <h1 class="display-5 text-center my-5">Personal Projects</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 mx-auto my-2">
-                    <div class="card border-dark">
-                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner border border-dark">
-                            <div class="carousel-item active">
-                                <img src="./img/carzone-project.png" class="d-block w-100" alt="home-page">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carzone-project-2.png" class="d-block w-100" alt="cars-page">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/carzone-project-3.png" class="d-block w-100" alt="services-page">
-                            </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Carzone Project</h5>
-                            <p class="card-text">A personal project with a bootstrap template for a car concessionaire using Django and PostgreSQL deployed on Heroku.</p>
-                            <a href="https://vast-badlands-80587.herokuapp.com/" target='_blank' class="btn btn-primary">Visit the complete website!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 mx-auto my-2">
-                    <div class="card border-dark">
-                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner border border-dark">
-                            <div class="carousel-item active">
-                                <img src="./img/devconnector-project.png" class="d-block w-100" alt="home-page">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/devconnector-project-2.png" class="d-block w-100" alt="cars-page">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/devconnector-project-3.png" class="d-block w-100" alt="services-page">
-                            </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">DevConnector Project</h5>
-                            <p class="card-text">Personal project made with MERN Stack and Redux for developers deployed on Heroku.</p>
-                            <a href="https://mighty-ocean-00211.herokuapp.com/" target='_blank' class="btn btn-primary">Visit the complete website!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container-fluid" id='find-me'> 
-            <div class="row">
-                <h1 class="display-5 my-5 text-end">Find me in</h1>
-            </div>
-            <div class="row d-flex justify-content-end">
-                <div class="col-sm-6 d-flex justify-content-end">
-                    <a href='https://www.linkedin.com/in/oscar-alvarado-758a33211/' class="fs-1 mx-3" target='_blank'><i class="bi bi-linkedin" role='button'></i></a>
-                    <a href='https://t.me/Blaxterbos' class="fs-1 mx-3" target='_blank'><i class="bi bi-telegram" role='button'></i></a>
-                    <a href='https://github.com/oscar-al8' class="fs-1 mx-3" target='_blank'><i class="bi bi-github" role='button'></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <h1 class="display-5 my-3 text-end">or</h1>
-            </div>
-            <div class="row d-flex justify-content-end">
-                <div class="col-sm-6 d-flex flex-column align-items-end justify-content-center">
-                    <p id='copy-hotmail-click'><a id='copy-hotmail' href='javascript:void(0)'>oscarmehrer@hotmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy"></i></p>
-                    <p id='copy-gmail-click'><a id='copy-gmail' href='javascript:void(0)'>blaxterbos@gmail.com</a><i class="bi bi-clipboard-check ms-1" role='button' data-bs-toggle="tooltip" data-bs-placement="left" title="Copy"></i></p>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="row">
-                <h1 class="display-5 text-center my-5">Thank you for your time!</h1>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <script src='./scripts/index.js'></script>
+        </div>
+        <script src='scripts/index.js'></script>
     </body>
 </html>

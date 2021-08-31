@@ -1,0 +1,83 @@
+.heading {
+  text-align: center;
+
+  &--1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  &--2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &--3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__about {
+    grid-area: about-start / 2 / about-end / 8;
+    align-self: center;
+    justify-self: center;
+    @extend %underline;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__expertise {
+    grid-area: headings-start / 6 / headings-end / 8;
+    align-self: center;
+    justify-self: center;
+    @extend %underline;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-area: exp-start / 2 / exp-end / 8;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__courses {
+    grid-area: headings-start / 2 / headings-end / 4;
+    align-self: center;
+    justify-self: start;
+    @extend %underline;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-area: cour-start / 2 / cour-end / 8;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__personal {
+    grid-area: personal-start / 2 / personal-end / 8;
+    align-self: center;
+    justify-self: center;
+    @extend %underline;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__find {
+    grid-area: find-start / 2 / find-end / 8;
+    align-self: center;
+    justify-self: center;
+    @extend %underline;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+  }
+}
