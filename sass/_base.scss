@@ -468,12 +468,6 @@ $shadows-big: multiple-box-shadow(100);
       fill: #fff;
     }
 
-    &--li:hover,
-    &--git:hover,
-    &--tg:hover {
-      transform: scale(1.2);
-    }
-
     &--li:hover {
       fill: #0077b5;
     }
